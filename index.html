@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="no">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Pengepiloten – Økonomiske tjenester for bedrifter</title>
+    <meta name="description" content="Pengepiloten hjelper bedrifter å få bedre avtaler, oversikt i økonomien og finne forbedringspotensial. Provisjonsbasert – ingen risiko." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="logo" href="#" aria-label="Pengepiloten hjem">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M3 12h12" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+            <path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+          <span>Pengepiloten</span>
+        </a>
+        <nav class="main-nav" aria-label="Hovedmeny">
+          <a href="#tjenester">Tjenester</a>
+          <a href="#kontakt" class="btn btn-primary">Kontakt</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" id="top">
+        <div class="container hero-inner">
+          <div class="hero-copy">
+            <h1>Få bedre avtaler og full oversikt i økonomien</h1>
+            <p>Pengepiloten finner forbedringspotensial og forhandler bedre vilkår på økonomiske tjenester. Jeg jobber på provisjon – du betaler kun ved dokumentert gevinst.</p>
+            <div class="hero-cta">
+              <a href="#tjenester" class="btn btn-secondary">Se tjenester</a>
+              <a href="#kontakt" class="btn btn-primary">Kontakt meg</a>
+            </div>
+          </div>
+          <div class="hero-art" aria-hidden="true">
+            <svg viewBox="0 0 400 300" role="img" aria-label="Diagram som stiger">
+              <defs>
+                <linearGradient id="grad" x1="0" x2="1" y1="0" y2="1">
+                  <stop offset="0%" stop-color="#0ea5e9" />
+                  <stop offset="100%" stop-color="#22c55e" />
+                </linearGradient>
+              </defs>
+              <rect x="0" y="0" width="400" height="300" fill="#f8fafc" />
+              <polyline points="20,250 100,200 160,210 230,150 300,160 360,90" fill="none" stroke="url(#grad)" stroke-width="6" stroke-linecap="round" />
+              <circle cx="360" cy="90" r="6" fill="#22c55e" />
+            </svg>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="tjenester">
+        <div class="container">
+          <h2>Tjenester</h2>
+          <p class="section-lead">Konkret bistand for å redusere kostnader og øke kontrollen. Ingen risiko – provisjon ved resultat.</p>
+          <div class="cards">
+            <article class="card">
+              <h3>Bedre avtaler på økonomiske tjenester</h3>
+              <p>Jeg kartlegger behov, sammenligner leverandører og forhandler bedre vilkår.</p>
+              <ul>
+                <li>Bank, betalingsløsninger og kort</li>
+                <li>Regnskapsbyrå og årsoppgjør</li>
+                <li>Forsikring og pensjon</li>
+              </ul>
+            </article>
+            <article class="card">
+              <h3>Skaffe oversikt i økonomien</h3>
+              <p>Struktur, enkel rapportering og kontroll på kontantstrøm.</p>
+              <ul>
+                <li>Enkle oversikter og dashboards</li>
+                <li>Likviditetsoppfølging og rutiner</li>
+                <li>Nøkkeltall som faktisk brukes</li>
+              </ul>
+            </article>
+            <article class="card">
+              <h3>Finne forbedringspotensial</h3>
+              <p>Identifisere tiltak som gir effekt på bunnlinjen.</p>
+              <ul>
+                <li>Kostnadsanalyse og benchmarking</li>
+                <li>Prosessforbedringer</li>
+                <li>Pris- og avtalegjennomganger</li>
+              </ul>
+            </article>
+            <article class="card">
+              <h3>Provisjon – null risiko</h3>
+              <p>Du betaler kun når gevinst er dokumentert. Ingen besparelse = ingen kostnad.</p>
+              <ul>
+                <li>Klar avtale og åpen rapportering</li>
+                <li>Resultatbasert honorarmodell</li>
+                <li>Rask oppstart – lite tidsbruk internt</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="kontakt">
+        <div class="container">
+          <h2>Kontakt</h2>
+            <p class="section-lead">Kort melding holder – jeg tar kontakt for en uforpliktende prat.</p>
+          <form class="contact-form" name="kontakt" netlify>
+            <input type="hidden" name="form-name" value="kontakt" />
+            <div class="form-row">
+              <label for="navn">Navn</label>
+              <input id="navn" name="navn" type="text" autocomplete="name" required />
+            </div>
+            <div class="form-row">
+              <label for="epost">E‑post</label>
+              <input id="epost" name="epost" type="email" autocomplete="email" required />
+            </div>
+            <div class="form-row">
+              <label for="melding">Melding</label>
+              <textarea id="melding" name="melding" rows="5" required></textarea>
+            </div>
+            <div class="form-actions">
+              <button type="submit" class="btn btn-primary">Send melding</button>
+            </div>
+          </form>
+          <div class="contact-meta">
+            <p><strong>E‑post:</strong> <a href="mailto:post@pengepiloten.no">post@pengepiloten.no</a></p>
+            <p><strong>Org.nr:</strong> 000 000 000</p>
+            <p><strong>Lokasjon:</strong> Oslo og omegn</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <a class="logo" href="#top" aria-label="Til toppen">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M3 12h12" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+            <path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+          <span>Pengepiloten</span>
+        </a>
+        <nav aria-label="Bunnmeny">
+          <a href="#tjenester">Tjenester</a>
+          <a href="#kontakt">Kontakt</a>
+        </nav>
+        <p class="copyright">© <span id="year"></span> Pengepiloten. Alle rettigheter forbeholdt.</p>
+      </div>
+    </footer>
+    <script src="/script.js" defer></script>
+  </body>
+</html>
